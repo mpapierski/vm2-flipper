@@ -66,6 +66,7 @@ checksum = "514de17de45fdb8dc022b1a7975556c53c86f9f0aa5f534b98977b171857c2c9"
 [[package]]
 name = "casper-macros"
 version = "0.1.0"
+source = "git+https://github.com/mpapierski/casper-node?branch=vm2#199dc0caa739bfcc4ee76a6d531dc70f9b336232"
 dependencies = [
  "blake2-rfc",
  "casper-sdk-sys",
@@ -81,6 +82,7 @@ dependencies = [
 [[package]]
 name = "casper-sdk"
 version = "0.1.0"
+source = "git+https://github.com/mpapierski/casper-node?branch=vm2#199dc0caa739bfcc4ee76a6d531dc70f9b336232"
 dependencies = [
  "bitflags",
  "borsh",
@@ -100,6 +102,7 @@ dependencies = [
 [[package]]
 name = "casper-sdk-sys"
 version = "0.1.0"
+source = "git+https://github.com/mpapierski/casper-node?branch=vm2#199dc0caa739bfcc4ee76a6d531dc70f9b336232"
 
 [[package]]
 name = "cfg-if"
@@ -493,6 +496,7 @@ checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 [[package]]
 name = "vm-common"
 version = "0.1.0"
+source = "git+https://github.com/mpapierski/casper-node?branch=vm2#199dc0caa739bfcc4ee76a6d531dc70f9b336232"
 dependencies = [
  "bitflags",
  "borsh",

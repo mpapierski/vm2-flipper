@@ -8,13 +8,13 @@ edition = "2021"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-casper-macros = { path = "../casper-node/smart_contracts/macros" }
-casper-sdk = { path = "../casper-node/smart_contracts/sdk" }
-[profile.release]
-codegen-units=1
-opt-level="z"
-lto=true
-debug=false
-panic="abort"
-overflow-checks=true
+casper-macros = { git = "https://github.com/mpapierski/casper-node", branch = "vm2" }
+casper-sdk = { git = "https://github.com/mpapierski/casper-node", branch = "vm2" }
 
+[profile.release]
+codegen-units = 1
+debug = false
+lto = true
+opt-level = "z"
+overflow-checks = true
+panic = "abort"
