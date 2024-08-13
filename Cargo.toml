@@ -8,8 +8,8 @@ edition = "2021"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-casper-macros = { git = "https://github.com/mpapierski/casper-node", branch = "vm2" }
-casper-sdk = { git = "https://github.com/mpapierski/casper-node", branch = "vm2" }
+casper-macros = { git = "https://github.com/mpapierski/casper-node", branch = "new-execution-engine" }
+casper-sdk = { git = "https://github.com/mpapierski/casper-node", branch = "new-execution-engine" }
 
 [profile.release]
 codegen-units = 1
