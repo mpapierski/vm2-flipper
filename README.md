@@ -13,25 +13,27 @@ You can run unit tests:
 cargo test
 ```
 
-# Building for Wasm
+# Tools
 
-```sh
-cargo build --release --target wasm32-unknown-unknown -p vm2-flipper
-```
-
-# Install
-
-You need custom tools from a git repo.
+You need custom tools installed from a git repo.
 
 ```sh
 # cargo-casper
-cargo install --git https://github.com/mpapierski/casper-node --branch vm2 cargo-casper
+cargo install --git https://github.com/casper-node/casper-node --branch dev cargo-casper
 ```
+
+# Building the contract
+
+```sh
+cargo-casper build
+```
+
+This builds both .wasm and .json schema files.
 
 # Contract schema
 
 To obtain schema for this contract you can run:
 
 ```
-cargo-casper get-schema -p vm2-flipper
+cargo-casper build-schema
 ```
