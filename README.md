@@ -19,7 +19,7 @@ You need custom tools installed from a git repo.
 
 ```sh
 # cargo-casper
-cargo install --git https://github.com/casper-node/casper-node --branch dev cargo-casper
+cargo install --git https://github.com/casper-network/casper-node --branch dev cargo-casper
 ```
 
 # Building the contract
