@@ -8,12 +8,12 @@ edition = "2021"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-casper-sdk = { git = "https://github.com/casper-network/casper-node", branch = "dev" }
+casper-contract-sdk = { git = "https://github.com/casper-network/casper-node", branch = "dev" }
 
 [profile.release]
 codegen-units = 1
 debug = false
-lto = true
+lto = "fat"
 opt-level = "z"
 overflow-checks = true
 panic = "abort"

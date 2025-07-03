@@ -1,19 +1,14 @@
 #![cfg_attr(target_arch = "wasm32", no_main)]
 #![cfg_attr(target_arch = "wasm32", no_std)]
 
-use casper_sdk::prelude::*;
+use casper_contract_sdk::prelude::*;
 
 /// This contract implements a simple flipper.
+#[derive(PanicOnDefault)]
 #[casper(contract_state)]
 pub struct Flipper {
     /// The current state of the flipper.
     value: bool,
-}
-
-impl Default for Flipper {
-    fn default() -> Self {
-        panic!("Unable to instantiate contract without a constructor");
-    }
 }
 
 #[casper]
